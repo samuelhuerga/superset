@@ -1,6 +1,6 @@
 FROM apache/superset:latest
 
 USER root
-RUN pip install snowflake-sqlalchemy snowflake-connector-python
+RUN /app/.venv/bin/pip install snowflake-sqlalchemy snowflake-connector-python
 
 USER superset
